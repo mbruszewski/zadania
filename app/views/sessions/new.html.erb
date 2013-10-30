@@ -1,0 +1,13 @@
+<%= form_for(:session, url: sessions_path) do |f| %>
+  <p>
+    <%= f.label :login, "Login" %> <br/>
+    <%= f.text_field :login %>
+  </p>
+  <p>
+    <%= f.label :password, "Password" %><br/>
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.submit "Submit", class: 'button' %>
+  </p>
+<% end %>
